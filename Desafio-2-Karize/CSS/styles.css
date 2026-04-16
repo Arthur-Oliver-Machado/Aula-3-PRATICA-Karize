@@ -1,0 +1,170 @@
+/*Formatação Global*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos para o corpo da página*/
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: black;
+}
+
+/*Estilos para o cabeçalho*/
+header {
+    background-color: #242E31;
+    /*Cor Primaria*/
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Estilos personalizados para o banner do cabeçalho*/
+.hero {
+    height: 25vh;
+    /*Altura da tela */
+    background: url('/Desafio-2-Karize/img/aviao-horizontal-cinza2.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /*Centralização do conteúdo do banner*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Estilos para o título do cabeçalho*/
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/*Estilos para a barra de navegação*/
+nav {
+    background-color: #181D1F;
+    /*Cor secundaria*/
+    padding: 8px 16px;
+    text-align: center;
+}
+
+nav a {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background .2s;
+    text-decoration: none;
+    color: white;
+}
+
+nav :hover {
+    background: rgba(0, 0, 0, 0.35);
+    color: rgb(255, 255, 255)
+}
+
+/*Estilos para o conteúdo principal*/
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/*Estilos para as seções do conteúdo principal*/
+section {
+    margin-bottom: 32px;
+}
+
+/*Estilos para os títulos das seções*/
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #242E31;
+    border-left: 4px solid #242E31;
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+
+/*Estilos para os parágrafos*/
+p {
+    color: rgba(0, 0, 0, 0.928);
+    margin-bottom: 12px;
+}
+
+/*Estilos para as listas*/
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px solid rgba(53, 49, 49, 0.226);
+    position: relative;
+    color: #475569;
+
+}
+
+ul li::before {
+    content: "⁜";
+    color: #7c000a;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+ul li a {
+    color: rgba(0, 0, 0, 0.872);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background .2s;
+}
+
+/*Estilos para o rodapé*/
+footer {
+    background-color: #12181D;
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+    padding: 20px 20px;
+    font-size: .9rem;
+    margin-top: 40px;
+}
+
+/*Estilos personalizados*/
+#banner {
+    color: white;
+}
+
+#rodape {
+    color: white;
+}
+
+#validacao {
+    position: relative;
+    margin-left: 1150px;
+}
+
+#h2-sobre-mim {
+    margin-left: 350px;
+    position: relative;
+    top: -300px;
+}
+
+#p-sobre-mim {
+    margin-left: 350px;
+    position: relative;
+    top: -280px;
+}
+
+/*Estilos para imagens*/
+img {
+    border-radius: 15px;
+    object-fit: cover;
+}
