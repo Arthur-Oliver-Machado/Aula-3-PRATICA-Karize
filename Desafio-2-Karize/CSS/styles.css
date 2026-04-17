@@ -197,5 +197,10 @@ img {
 
 .adjust img {
     object-fit: contain;
-    object-position: 40% 50%;
+    object-position: 40% 90%;
+}
+
+.adjust-2 img {
+    object-fit: contain;
+    object-position: 100% 50%;
 }
