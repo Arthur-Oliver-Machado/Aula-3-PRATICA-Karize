@@ -168,3 +168,34 @@ img {
     border-radius: 15px;
     object-fit: cover;
 }
+
+/*Estilos para a galeria de imagens*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.galeria figure {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.galeria figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.galeria figure:hover img {
+    transform: scale(1.06);
+    opacity: 0.82;
+}
+
+.adjust img {
+    object-fit: contain;
+    object-position: 40% 50%;
+}
