@@ -26,11 +26,12 @@ header {
 .hero {
     height: 25vh;
     /*Altura da tela */
-    background: url('/Desafio-2-Karize/img/aviao-horizontal-cinza2.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0)), url('/Desafio-2-Karize/img/aviao-horizontal-cinza2.jpg');
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 
     /*Centralização do conteúdo do banner*/
     display: flex;
@@ -39,6 +40,8 @@ header {
     align-items: center;
     text-align: center;
 }
+
+
 
 /*Estilos para o título do cabeçalho*/
 header h1 {
@@ -163,6 +166,24 @@ footer {
     top: -280px;
 }
 
+.moldura-da-imagem {
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.moldura-da-imagem img {
+ border-radius: 4px;
+ object-fit: cover;
+ object-position: 100% 50%;
+}
+
+.h2,figura {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    border-left: none !important; 
+}
+
 /*Estilos para imagens*/
 img {
     border-radius: 15px;
@@ -195,6 +216,7 @@ img {
     opacity: 0.82;
 }
 
+/*Estilos para ajustes específicos de imagens*/
 .adjust img {
     object-fit: contain;
     object-position: 40% 90%;
