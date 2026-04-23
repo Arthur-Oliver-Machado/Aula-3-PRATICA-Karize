@@ -26,12 +26,12 @@ header {
 .hero {
     height: 25vh;
     /*Altura da tela */
-    background:linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0)), url('/Desafio-2-Karize/img/aviao-horizontal-cinza2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0)), url('/Desafio-2-Karize/img/aviao-horizontal-cinza2.jpg');
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 
     /*Centralização do conteúdo do banner*/
     display: flex;
@@ -172,16 +172,17 @@ footer {
 }
 
 .moldura-da-imagem img {
- border-radius: 4px;
- object-fit: cover;
- object-position: 100% 50%;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: 100% 50%;
 }
 
-.h2,figura {
+.h2,
+figura {
     display: flex;
     justify-content: right;
     align-items: right;
-    border-left: none !important; 
+    border-left: none !important;
 }
 
 /*Estilos para imagens*/
@@ -224,5 +225,26 @@ img {
 
 .adjust-2 img {
     object-fit: contain;
-    object-position: 100% 50%;
+    object-position: 100% 10%;
+}
+
+.adjust-3 img {
+    object-fit: contain;
+    object-position: 0% ;
+}
+
+/* Estilos personalizados para lista de contatos */
+.lista li {
+    border-bottom: none !important;
+    position: relative;
+    top: -379px;
+
+}
+
+.lista li:has(.fa-github)::before {
+    content: none !important;
+}
+
+.lista li::before {
+    content: none;
 }
