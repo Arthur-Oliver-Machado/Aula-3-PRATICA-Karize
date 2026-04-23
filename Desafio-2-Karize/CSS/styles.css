@@ -248,3 +248,8 @@ img {
 .lista li::before {
     content: none;
 }
+
+.adjust-3 img {
+    object-fit: contain;
+    object-position: 10% 5%;
+}
